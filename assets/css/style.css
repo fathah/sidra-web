@@ -542,7 +542,7 @@ h6 {
 }
 
 #hero .btn-watch-video:hover i {
-  color: #3b8af2;
+  color: #019d47;
 }
 
 @media (min-width: 1024px) {
@@ -923,7 +923,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #f1f6fe;
+  background: #e2fcee;
   border-radius: 4px;
   border: 1px solid #deebfd;
   display: flex;
@@ -934,7 +934,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #3b8af2;
+  color: #019d47;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -1290,7 +1290,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #3b8af2;
+  background: #019d47;
 }
 
 .team .member .social i {
@@ -1416,7 +1416,7 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #3b8af2;
+  background: #019d47;
 }
 
 .pricing .featured h3 {
@@ -1614,7 +1614,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #3b8af2;
+  background: #019d47;
 }
 
 @keyframes animate-loading {
@@ -1781,7 +1781,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #3b8af2;
+  background: #019d47;
   color: #fff;
   text-decoration: none;
 }

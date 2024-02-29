@@ -287,3 +287,43 @@
   new PureCounter();
 
 })()
+
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 2,
+        spaceBetween: 5,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2000, // milliseconds
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          // when window width is <= 768px
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 3,
+          },
+        },
+      });
+    

@@ -461,7 +461,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 75vh;
+  height: 85vh;
   background: url("../img/portfolio/2024/gallery-8.jpg") top left;
   background-size: cover;
   position: relative;
@@ -470,7 +470,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgb(241, 246, 254,.4);
+  background: rgba(255, 255, 255, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -550,6 +550,14 @@ h6 {
   #hero {
     background-attachment: fixed;
   }
+  .main-title{
+    padding: 35px;
+  }
+}
+@media (max-width:1024px){
+  .main-title{
+    padding: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -572,12 +580,16 @@ h6 {
   #hero .btn-watch-video {
     font-size: 13px;
   }
+  .main-title{
+    padding: 20px;
+  }
 }
 
 @media (max-height: 500px) {
   #hero {
     height: 120vh;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1003,9 +1015,14 @@ section {
 }
 
 .ventures .icon-box .icon i {
-  color: #00B050;
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
+  color: #00B050 !important;
+  font-size: 28px !important;
+  transition: ease-in-out 0.3s !important;
+}
+.ventures .icon-box .icon svg {
+  color: #00B050 !important;
+  font-size: 28px !important;
+  transition: ease-in-out 0.3s !important;
 }
 
 .ventures .icon-box h4 {
@@ -1083,7 +1100,11 @@ section {
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
-
+.clubs .icon-box .icon svg {
+  color: #00B050 !important;
+  font-size: 28px !important;
+  transition: ease-in-out 0.3s !important;
+}
 .clubs .icon-box h4 {
   font-weight: 700;
   font-size: 18px;

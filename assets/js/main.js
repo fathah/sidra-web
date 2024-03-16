@@ -5,12 +5,30 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 (function() {
   "use strict";
 
   /**
    * Easy selector helper function
    */
+
+  const heroImage = document.querySelector('.hero-image');
+  let imageIndex = 3; // Starting image index
+  const maxImages = 10; // Total number of images
+
+  const updateHeroImage = () => {
+    heroImage.style.opacity = .5; // Start with opacity 0
+    setTimeout(() => {
+      heroImage.style.backgroundImage = `url('/assets/img/portfolio/2024/gallery-${imageIndex}.jpg')`;
+      heroImage.style.opacity = 1; // Fade in the new image
+    }, 1000); // Adjust the transition duration as needed
+  };
+
+  const heroInterval = setInterval(() => {
+    imageIndex = (imageIndex % maxImages) + 1; // Increment image index cyclically
+    updateHeroImage();
+  }, 6000);
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {

@@ -320,14 +320,6 @@
    * Initiate Pure Counter
    */
   new PureCounter();
-
-  document
-    .querySelector("#payment-form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
-
-     
-    });
 })();
 
 var swiper = new Swiper(".swiper-container", {
@@ -368,3 +360,8 @@ var swiper = new Swiper(".swiper-container", {
     },
   },
 });
+document
+  .querySelector("#payment-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+  });
